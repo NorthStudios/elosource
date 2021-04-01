@@ -15,16 +15,16 @@ import datetime
 
 
 
-lol_watcher = LolWatcher('RGAPI-de495ce7-8036-4f76-b3e3-399cc5d04a02')
+lol_watcher = LolWatcher('RIOT-API-KEY')
 
 
 
-TOKEN = 'ODAyOTY2MzgxNjc5MjE0NjAy.YA26tw.Tu2_Z805AEqKfFKiCwUl4Olh4P0'
+TOKEN = 'BOT-TOKEN'
 OWNERID = 432163622878183424
 
 client = discord.Client()
 
-channel = client.get_channel(802967377159389317)
+channel = client.get_channel()
 
 client = commands.Bot(command_prefix =['!e ','!E ','!elo ','!Elo ','!ELO ','!e','!E','!elo','!Elo','!ELO'])
 
@@ -34,10 +34,7 @@ ROLE = "Member"
 
 status = cycle(['League of Legends', '!e commands', '!e elo'])
 
-#@client.command()
-#async def setPrefix(ctx, arg):
-    #command_prefix = arg
-    
+
 
 
 @client.event
